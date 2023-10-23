@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let msg = input.value;
         console.log(msg);
         socket.emit('new_msg', {
-            message: msg
+            message: msg,
         });
         input.value = "";
     });
